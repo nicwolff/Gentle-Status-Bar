@@ -58,6 +58,7 @@ if (isInIFrame === false)
 	{
 		var intro = "";
 		var outro = "";
+		if ( linkHref === undefined ) return;
 		var linkShow = parseURL(linkHref).resolved;
 		if (linkHref.substr(0, 7).toLowerCase() === "mailto:")
 		{
